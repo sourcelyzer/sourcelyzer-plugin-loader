@@ -1,0 +1,35 @@
+{
+  "name": "sourcelyzer-plugin-loader",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "nyc mocha './test/test-loader.js'"
+  },
+  "nyc": {
+    "include": ["src/**/*.js"],
+    "reporter": [
+      "lcov",
+      "text-summary"
+    ],
+    "report-dir": "./reports"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
+    "chai": "^4.1.1",
+    "cross-env": "^5.0.5",
+    "d3": "^4.10.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.5.0",
+    "nyc": "^11.1.0",
+    "webpack": "^3.5.1",
+    "webpack-dev-server": "^2.7.1",
+    "webpack-runtime-require": "^0.1.0"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "scriptjs": "^2.5.8"
+  }
+}
