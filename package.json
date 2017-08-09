@@ -9,6 +9,7 @@
   "nyc": {
     "include": ["src/**/*.js"],
     "reporter": [
+      "cobertura",
       "lcov",
       "text-summary"
     ],
